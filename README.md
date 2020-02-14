@@ -1,0 +1,2 @@
+# NvidiaJetsonNano-TeachableMachine
+Did you ever want to build your smart solution that could run at the edge, recognise specific objects (or sounds, or human pose) and report summary of its findings directly to your analytics dashboard. Then search no further. Power of Nvidia's Jetson Nano device, Google's Teachable Machine - visual Machine Learning utility, and Microsoft's PowerBI are combined here to help you on your journey!
