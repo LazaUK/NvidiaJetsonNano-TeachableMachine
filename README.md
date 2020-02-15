@@ -75,20 +75,12 @@ Original frame image then rendered along with the prediction details on attached
 > **Note**: Complete code of the program can be found in provided *NANO_camera_v1.py* file.
 
 ## Analytics configuration:
-1. In Azure, create new Stream Analytics job and add IoT Hub as its stream input
-![Screenshot 3.1](/images/Analytics_1.png)
-2. Add PowerBI as the output for Stream Analytics job and click Authorize.
-![Screenshot 3.2](/images/Analytics_2.png)
-3. Provide relevant output alias name, so that you can use it in the Stream Analytics query.
-![Screenshot 3.3](/images/Analytics_3.png)
-4. Alternatively, you can setup Azure storage account or a database as an output for Azure Stream Analytics job.
-![Screenshot 3.4](/images/Analytics_4.png)
-5. Last part is to create your dashboard in PowerBI. You may configure it directly at https://powerbi.microsoft.com/en-us/ or use richer functionality with the PowerBI desktop client. This is an example of my PowerBI dashboard, which combines historical data from the database with the live stream from the Azure Sphere device.
-![Screenshot 3.5](/images/Analytics_5.png)
+To enable real-time data reporting, I installed Azure IoT Hub in my Azure subscription, so that Jetson Nano can submit its message to its endpoint.
 
-```
-azsphere device enable-development
-```
+IoT Hub is then used as a data source for another resource in Azure, Azure Stream Analytics, which can process the data stream and in my case redirect it to the PowerBI workspace. ASA uses SQL-like query language, and as shown on the screenshot below I simply redirect all the content to the target table in PowerBI cloud environment.
+![Azure_ASA](/images/Azure_ASA.png)
+Last part is to create your dashboard in PowerBI. You may configure it directly at https://powerbi.microsoft.com/en-us/ or use richer functionality with the PowerBI desktop client. This is an example of my PowerBI dashboard, which combines historical data from the database with the live stream from the Jetson Nano device.
+![Screenshot 3.5](/images/Analytics_5.png)
 
 ## High-Level Design:
 The following diagram shows the main components utilised in this project.
