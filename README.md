@@ -15,7 +15,7 @@ As a further enhancement, you may report some of the findings back to your backe
 2. Flash microSD Card with the latest version of JetPack as per instruction on this [NVIDIA Web site](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write)
 3. Then deploy Jetson inference libraries, as explained on this [GitHub repo](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md)
 4. And, finally, install TensorFlow framework on your Jetson Nano device as per instruction on this [NVIDIA Web site](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html)
-> **Note**: 
+> **Note**: Last step, installation of TensorFlow, is required only for the current version of this package: version 1. In the future, I can hopefully describe version 2, where TensorFlow model can be converted into Jetson Nanon optimised TensorRT model / engine. It would then allow more effective use of Jetson's hardware and software capabilities.
 
  
 ## Data flow configuration:
