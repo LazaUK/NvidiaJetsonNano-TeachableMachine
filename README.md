@@ -59,8 +59,10 @@ As clear from the method's name, image is captured in RGBA format, while our Mac
 ```
 rgba2rgb(jsu.cudaToNumpy(img, width, height, 4)) 
 ```
-
-
+We user Keras's method for loading models by pointing to the folder where we extract TensorFlow SavedModel, that we exported from the Teachable Machine site after training our Machine Learning model.
+```
+saved_model = tf.keras.models.load_model('savedmodel')
+```
 
 
 ## Analytics configuration:
