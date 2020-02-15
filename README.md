@@ -10,7 +10,7 @@ As a further enhancement, you may report some of the findings back to your backe
 > **Potential areas of implementation**: Imagine a production line equipped with the camera and Jetson Nano -like processing unit. If trained to recognise standard and defective versions of the product, this may enable automatic quality control. Or you can monitor availability of the products on the shelves of the shops to re-order when neeed. Or can detect anomalies in the working engine's sound as the system picks up the changes in the audio signal. And so on and on and on: anywhere you have patterns, such smart solution can detect potential deviations to report or react to.
 
 ## Jetson Nano Setup:
-1. If you have not purchased NVIDIA Jetson Nano Developer Kit yet, then you can order one from the [Jetson Store](https://www.nvidia.com/en-gb/autonomous-machines/jetson-store/).
+1. If you have not purchased NVIDIA Jetson Nano Developer Kit yet, you can order one from the [Jetson Store](https://www.nvidia.com/en-gb/autonomous-machines/jetson-store/).
 2. 
 
 XX. In
