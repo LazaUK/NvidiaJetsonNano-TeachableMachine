@@ -28,7 +28,14 @@ Google drastically simplified the process of the Machine Learning through the re
 > **Note**: For this tutorial, I trained the model with 3 classes: "Rubik Cube" (to simulate standard product), "Wrong Puzzle" (where another puzzle is used to simulate defective product) and "Nothing" (empty screen, that the system will use when no objects are shown).
 
 ## Python code walk-through:
-1. In Azure, 
+If you configured your Jetson Nano device and then trained your Machine Learning model with the Teachable Machine, then you can use provided *NANO_camera_v1.py* from this GitHub repo to perform object recognition at the edge.
+
+As you can see below, there are only 3 libraries used here: TensorFlow (GPU-version for Jetson), Numpy and Jetson Utils (the latter gets installed automatically as a part of Jetson Nano Setup section above.)
+```
+import tensorflow as tf
+import numpy as np
+import jetson.utils as jsu
+```
 
 ## Analytics configuration:
 1. In Azure, create new Stream Analytics job and add IoT Hub as its stream input
