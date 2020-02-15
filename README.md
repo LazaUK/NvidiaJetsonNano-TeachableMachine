@@ -27,6 +27,9 @@ Google drastically simplified the process of the Machine Learning through the re
 5. If you are happy with the results, in Preview section click "Export Model" button, then switch to TensorFlow tab and save it to your computer.
 > **Note**: For this tutorial, I trained the model with 3 classes: "Rubik Cube" (to simulate standard product), "Wrong Puzzle" (where another puzzle is used to simulate defective product) and "Nothing" (empty screen, that the system will use when no objects are shown).
 
+## Python code walk-through:
+1. In Azure, 
+
 ## Analytics configuration:
 1. In Azure, create new Stream Analytics job and add IoT Hub as its stream input
 ![Screenshot 3.1](/images/Analytics_1.png)
