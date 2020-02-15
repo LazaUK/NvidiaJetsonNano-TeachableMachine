@@ -11,7 +11,6 @@ As a further enhancement, you may report some of the findings back to your backe
 
 ## Jetson Nano Setup:
 1. If you have not purchased NVIDIA Jetson Nano Developer Kit yet, then you can order one from the [Jetson Store](https://www.nvidia.com/en-gb/autonomous-machines/jetson-store/).
-![Screenshot 1.1](/images/Infra_1.png)
 2. 
 
 XX. In
