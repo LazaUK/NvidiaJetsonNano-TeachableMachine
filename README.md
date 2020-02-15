@@ -21,7 +21,7 @@ As a further enhancement, you may report some of the findings back to your backe
 Google drastically simplified the process of the Machine Learning through the release of their online "Teachable Machine" platform. It's a no-code environment, where without writing a single line of code you can build a reusable model, capable of recognising your own images, sounds or even human poses !
 1. To start, first open [Teachable Machine](https://teachablemachine.withgoogle.com/) Web site and click "Get Started" button;
 
-![Screenshot 2.10](/images/Soft_10.png)
+![Teachable_Machine](/images/TeachableMachine.PNG)
 
 ## Analytics configuration:
 1. In Azure, create new Stream Analytics job and add IoT Hub as its stream input
