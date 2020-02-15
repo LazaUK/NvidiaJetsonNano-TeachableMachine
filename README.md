@@ -3,7 +3,7 @@ Did you ever want to build your smart solution that could run at the edge, recog
 
 Then search no further. Power of Nvidia's Jetson Nano device, Google's Teachable Machine - visual Machine Learning utility, and Microsoft's PowerBI are combined here to help you on your journey!
 <p align="center">
-  <img src="/images/JetsonNano_DevKit.jpg" max-width: 5%>
+  <img src="/images/JetsonNano_DevKit.jpg" width="100" height="100">
 </p>
 
 ## Infrastructure Setup:
