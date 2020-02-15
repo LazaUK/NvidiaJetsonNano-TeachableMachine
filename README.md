@@ -15,29 +15,12 @@ As a further enhancement, you may report some of the findings back to your backe
 2. Flash microSD Card with the latest version of JetPack as per instruction on this [NVIDIA Web site](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write)
 3. Then deploy Jetson inference libraries, as explained on this [GitHub repo](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md)
 4. And, finally, install TensorFlow framework on your Jetson Nano device as per instruction on this [NVIDIA Web site](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html)
-> **Note**: Last step, installation of TensorFlow, is required only for the current version of this package (Version 1). In the future, I can hopefully describe Version 2, where TensorFlow model can be converted into Jetson Nanon optimised TensorRT model / engine. It would then allow more effective use of Jetson's hardware and software capabilities.
+> **Note**: Last step, installation of TensorFlow, is required only for the current version of this package (Version 1). In the future, I can hopefully describe Version 2, where TensorFlow model will be converted into Jetson Nanon optimised TensorRT model / engine. It would then allow more effective use of Jetson's hardware and software capabilities.
  
 ## Train the model with the Teachable Machine:
-1. In Azure Sphere Developer Command Prompt, execute the following command to get Azure Sphere tenant’s ID:
-```
-azsphere tenant show-selected
-```
-2. In Azure portal, switch to Azure IoT DPS -> Overview and copy DPS ID Scope value.
-3. From Azure IoT DPS -> Linked IoT Hubs copy the full name of the linked IoT Hub.
-4. Download content of this Git repo.
-5. In Visual Studio, click File -> Open -> CMake, navigate to the repo’s Software -> VotingApp and then open app_manifest.json file.
-![Screenshot 2.5](/images/Soft_5.png)
-6. Update placeholders highlighted in the screenshot below with the values of your Azure Sphere tenant’s ID, DPS ID Scope and IoT Hub names collected in Steps 1, 2 and 3 above.
-![Screenshot 2.6](/images/Soft_6.png)
-7. Select CMakeLists.txt file and then click Build -> Rebuild Current Document (CMakeLists.txt). Verify that an image package is being generated as shown below.
-![Screenshot 2.7](/images/Soft_7.png)
-8. In the toolbar, choose “GDB Debugger (HLCore)” as the target.
-![Screenshot 2.8](/images/Soft_8.png)
-9. In Azure Sphere Developer Command Prompt, enable application development capability on Azure Sphere device:
-```
-azsphere device enable-development
-```
-10. Back in Visual Studio, click Debug -> Start (or press F5) to deploy Voting Machine app to the device. If successful, Visual Studio will execute Voting Machine app on Azure Sphere device. In Output window, choose “Device Output” option. If you will press any of 2 buttons, you should see the message updates in the debug window.
+Google drastically simplified the process of the Machine Learning through the release of their online "Teachable Machine" platform. It's a no-code environment, where without writing a single line of code you can build a reusable model, capable of recognising your own images, sounds or even human poses !
+1. To start, first open [Teachable Machine](https://teachablemachine.withgoogle.com/) Web site and click "Get Started" button;
+
 ![Screenshot 2.10](/images/Soft_10.png)
 
 ## Analytics configuration:
@@ -51,6 +34,10 @@ azsphere device enable-development
 ![Screenshot 3.4](/images/Analytics_4.png)
 5. Last part is to create your dashboard in PowerBI. You may configure it directly at https://powerbi.microsoft.com/en-us/ or use richer functionality with the PowerBI desktop client. This is an example of my PowerBI dashboard, which combines historical data from the database with the live stream from the Azure Sphere device.
 ![Screenshot 3.5](/images/Analytics_5.png)
+
+```
+azsphere device enable-development
+```
 
 ## High-Level Design:
 The following diagram shows the main components utilised in this project.
