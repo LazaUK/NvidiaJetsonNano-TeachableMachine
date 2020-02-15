@@ -9,30 +9,16 @@ As a further enhancement, you may report some of the findings back to your backe
   <img src="/images/JetsonNano_DevKit.jpg" width="300">
 </p>
 
-## Infrastructure Setup:
-1. In Azure portal, create and link to each other Azure IoT Hub and Azure IoT Hub Device Provisioning Service (DPS) resources, using the following [Quick Setup guide](https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision).
+## Jetson Nano Setup:
+1. If you have not purchased NVIDIA Jetson Nano Developer Kit yet, then you can order one from the [Jetson Store](https://www.nvidia.com/en-gb/autonomous-machines/jetson-store/).
 ![Screenshot 1.1](/images/Infra_1.png)
-> **Note**: To use Device Twin capability, IoT Hub should be on the Standard pricing tier.
-2. In Azure Sphere Developer Command Prompt, download CA certificate from Azure Sphere tenant using the following command:
+2. 
+
+XX. In
 ```
-azsphere tenant download-CA-certificate --output CAcertificate.cer
+code sample
 ```
-You should see confirmation that the CA certificate has been saved.
-![Screenshot 1.2](/images/Infra_2.png)
-3. In Azure portal, upload certificate to Azure IoT DPS -> Certificates. After upload it will show new entry with an “Unverified” status.
-![Screenshot 1.3](/images/Infra_3.png)
-4. Then open certificate record and click “Generate Verification Code” button.
-![Screenshot 1.4](/images/Infra_4.png)
-5. In Azure Sphere Developer Command Prompt, download validation certificate signed with the DPS verification code from Step 4 above using the following command:
-```
-azsphere tenant download-validation-certificate --output ValidationCertification.cer --verificationcode <DPS_VERIFICATION_CODE>
-```
-You should see confirmation that the validation certificate has been saved.
-![Screenshot 1.5](/images/Infra_5.png)
-6. In Azure portal, upload validation certificate into “Verification Certificate” field of the record window from Step 4 and click “Verify” button. After validation, Azure will change the status of your certificate to “Verified”.
-![Screenshot 1.6](/images/Infra_6.png)
-7. Switch to Azure IoT DPS -> Manage Enrolments menu and add new enrolment group with the primary certificate that we verified in Step 6 above.
-![Screenshot 1.7](/images/Infra_7.png)
+
  
 ## Data flow configuration:
 1. In Azure Sphere Developer Command Prompt, execute the following command to get Azure Sphere tenant’s ID:
