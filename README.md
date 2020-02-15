@@ -1,10 +1,10 @@
 # Smart Object Recognizer - powered by NVIDIA Jetson Nano
-NVIDIA Jetson Nano Developer Kit is a compact, yet powerful computer equipped with a GPU (Graphics Processing Unit), which allows running of Machine Learning models at the edge.
+NVIDIA Jetson Nano Developer Kit is a compact, yet powerful computer equipped with a GPU (Graphics Processing Unit), which allows running of the Machine Learning models at the edge.
 
-Here I'll show how you can easily train your Machine Learning model in the cloud using Google's Teachable Machine Web site, then bring it over to NVIDIA Jetson Nano and run it offline.
+Here I'll show how you can easily train your Machine Learning model in the cloud using Google's Teachable Machine Web site, then bring it over to NVIDIA Jetson Nano and run offline.
 
-As a further enhancement, you can report some of the findings back to your backend of choice (in my case, using Microsoft Azure) to store in the data store for the future references or visualise the data in real time.
-> **Potential areas of implementation**: Imagine a production line equipped with the camera and Jetson Nano -like processing unit. If trained to recognise standard and defective version of the product, this may enable automatic quality control. Or monitor availability of the products on the shelves of the shops or even home fridges. Detect anomalies in working engine or laboratory euipment because of the changes in the audio signal. And so on and on and on: anywhere where you have patterns, such smart solution can detect whether everything functions as expected or if there are any deviations which are to be reported or reacted to.
+As a further enhancement, you may report some of the findings back to your backend of choice (in my case - Microsoft Azure) to store in the target data store for the future references or visualise collected data in a real time dashboard.
+> **Potential areas of implementation**: Imagine a production line equipped with the camera and Jetson Nano -like processing unit. If trained to recognise standard and defective versions of the product, this may enable automatic quality control. Or you can monitor availability of the products on the shelves of the shops to re-order when neeed. Or you can detect anomalies in the working engine's sound as your solution may pick up changes in the audio signal. And so on and on and on: anywhere you have patterns, such smart solution can detect potential deviations to report or react to.
 <p align="center">
   <img src="/images/JetsonNano_DevKit.jpg" width="300">
 </p>
