@@ -24,6 +24,7 @@ Google drastically simplified the process of the Machine Learning through the re
 3. If you will press the Train button, Teachable Machine will start training the model. By default, it will run through the 50 epochs (training cycles), but if necessary you may adjust the settings;
 4. Upon completion of the training process, you will be able to test it in Preview section of the screen, where you can either upload some test images or check how it recognises the objects real-time in the stream of your Webcam, as shown on the screen below;
 ![Teachable_Machine](/images/TeachableMachine.PNG)
+
 5. If you are happy with the results, in Preview section click "Export Model" button, then switch to TensorFlow tab and save it to your computer.
 **Note**: For this tutorial, I trained the model with 3 classes: "Rubik Cube" (to simulate standard product), "Wrong Puzzle" (where another puzzle is used to simulate defective product) and "Nothing" (empty screen, that the system will use when no objects are shown).
 
