@@ -71,7 +71,8 @@ We overlay then the level of the confidence of our Machine Learning model in rec
 ```
 font.OverlayText(img, width, height, "{:05.2f}% {:s}".format(confidence * 100, class_desc), 5, 5, font.White, font.Gray40)
 ```
-Complete code of the program can be found in provided *NANO_camera_v1.py* file.
+Original frame image then rendered along with the prediction details on attached screen.
+> **Note**: Complete code of the program can be found in provided *NANO_camera_v1.py* file.
 
 ## Analytics configuration:
 1. In Azure, create new Stream Analytics job and add IoT Hub as its stream input
