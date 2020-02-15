@@ -14,7 +14,7 @@ As a further enhancement, you may report some of the findings back to your backe
 1. If you have not purchased NVIDIA Jetson Nano Developer Kit yet, you can order one from the [Jetson Store](https://www.nvidia.com/en-gb/autonomous-machines/jetson-store/);
 2. Flash microSD Card with the latest version of JetPack as per instruction on this [NVIDIA Web site](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write);
 3. Then deploy Jetson inference libraries, as explained on this [GitHub repo](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md);
-4. And, finally, install TensorFlow framework on your Jetson Nano device as per instruction on this [NVIDIA Web site](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html)
+4. And, finally, install TensorFlow framework on your Jetson Nano device as per instruction on this [NVIDIA Web site](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html).
 > **Note**: Last step, installation of TensorFlow, is required only for the current version of this package (Version 1). In the future, I can hopefully describe Version 2, where TensorFlow model will be converted into Jetson Nanon optimised TensorRT model / engine. It would then allow more effective use of Jetson's hardware and software capabilities.
  
 ## Train the model with the Teachable Machine:
@@ -25,6 +25,7 @@ Google drastically simplified the process of the Machine Learning through the re
 4. Upon completion of the training process, you will be able to test it in Preview section of the screen, where you can either upload some test images or check how it recognises the objects real-time in the stream of your Webcam, as shown on the screen below;
 ![Teachable_Machine](/images/TeachableMachine.PNG)
 5. If you are happy with the results, in Preview section click "Export Model" button, then switch to TensorFlow tab and save it to your computer.
+**Note**: For this tutorial, I trained the model with 3 classes: "Rubik Cube" (to simulate standard product), "Wrong Puzzle" (where another puzzle is used to simulate defective product) and "Nothing" (empty screen, that the system will use when no objects are shown).
 
 ## Analytics configuration:
 1. In Azure, create new Stream Analytics job and add IoT Hub as its stream input
