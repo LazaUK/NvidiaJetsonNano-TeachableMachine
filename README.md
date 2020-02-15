@@ -36,6 +36,14 @@ import tensorflow as tf
 import numpy as np
 import jetson.utils as jsu
 ```
+I then set width and height for my camera to 1280 x 720 and specify that I use USB camera with */dev/video0*. If you want to use MIPI CSI camera instead, then you may need to set *CAMERA_TYPE* variable to *0* or *1* (depending on your system environment). I also specify image diemsnion to 124x124, as my saved model expects RGB image of (124, 124, 3) shape.
+```
+CAMERA_WIDTH = 1280
+CAMERA_HEIGHT = 720
+CAMERA_TYPE = '/dev/video0'
+IMAGE_WIDTH = 124
+IMAGE_HEIGHT = 124
+```
 
 ## Analytics configuration:
 1. In Azure, create new Stream Analytics job and add IoT Hub as its stream input
