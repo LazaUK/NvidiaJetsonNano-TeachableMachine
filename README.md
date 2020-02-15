@@ -49,6 +49,16 @@ Attached camera and display can be initiated using relevant methods from Jetson 
 camera = jsu.gstCamera(CAMERA_WIDTH, CAMERA_HEIGHT, CAMERA_TYPE)
 display = jsu.glDisplay()
 ```
+We then open video stream and capture frames, using *CaptureRGBA* method of our *camera* instance.
+```
+while display.IsOpen():
+    # Capture the image
+    img, width, height = camera.CaptureRGBA(zeroCopy=1)
+```
+As clear from the method's name, image is captured in RGBA format, while our Machine Learning model expects image in RGB format. That's why, we use Jetson Utils method to export the image data kept in CUDA memory into Numpy array, which we then convert from RGBA into RGB format. Here I use the conversion function (rgba2rgb), with its original code first published by Feng Wang on Stackoverflow, as mentioned in the program's comments.
+```
+rgba2rgb(jsu.cudaToNumpy(img, width, height, 4)) 
+```
 
 
 
