@@ -44,6 +44,14 @@ CAMERA_TYPE = '/dev/video0'
 IMAGE_WIDTH = 124
 IMAGE_HEIGHT = 124
 ```
+Attached camera and display can be initiated using relevant methods from Jetson Utils.
+```
+camera = jsu.gstCamera(CAMERA_WIDTH, CAMERA_HEIGHT, CAMERA_TYPE)
+display = jsu.glDisplay()
+```
+
+
+
 
 ## Analytics configuration:
 1. In Azure, create new Stream Analytics job and add IoT Hub as its stream input
