@@ -10,7 +10,7 @@ As a further enhancement, you may report some of the findings back to your backe
 
 > **Potential areas of implementation**: Imagine a production line equipped with the camera and Jetson Nano -like processing unit. If trained to recognise standard and defective versions of the product, this may enable automatic quality control. Or you can monitor availability of the products on the shelves of the shops to re-order when neeed. Or can detect anomalies in the working engine's sound as the system picks up the changes in the audio signal. And so on and on and on: anywhere you have patterns, such smart solution can detect potential deviations to report or react to.
 
-## Jetson Nano Setup:
+## Jetson Nano setup:
 1. If you have not purchased NVIDIA Jetson Nano Developer Kit yet, you can order one from the [Jetson Store](https://www.nvidia.com/en-gb/autonomous-machines/jetson-store/);
 2. Flash microSD Card with the latest version of JetPack as per instruction on this [NVIDIA Web site](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write);
 3. Then deploy Jetson inference libraries, as explained on this [GitHub repo](https://github.com/dusty-nv/jetson-inference/blob/master/docs/building-repo-2.md);
@@ -82,7 +82,7 @@ IoT Hub is then used as a data source for another resource in Azure, Azure Strea
 Last part is to create your dashboard in PowerBI. You may configure it directly at https://powerbi.microsoft.com/en-us/ or use richer functionality with the PowerBI desktop client. This is an example of my PowerBI dashboard, which combines historical data from the database with the live stream from the Jetson Nano device.
 ![Screenshot 3.5](/images/Analytics_5.png)
 
-## High-Level Design:
+## High-level design:
 The following diagram shows the main components utilised in this project.
 ![JetsonNano_Architecture](/images/JetsonNano_Architecture.png)
 
