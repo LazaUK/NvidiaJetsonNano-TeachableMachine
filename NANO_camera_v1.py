@@ -33,8 +33,7 @@ CAMERA_TYPE = "/dev/video0"
 IMAGE_WIDTH = 124
 IMAGE_HEIGHT = 124
 LAZIZ_LABELS = ["ALARM: WRONG PUZZLE !!", "Rubik Cube", "I cannot find any puzzles ?!"]
-# AZURE_IOTHUB = "<IOTHUB_CONNECTION_STRING>"
-AZURE_IOTHUB = "HostName=Laziz-IoTHuB.azure-devices.net;DeviceId=JetsonNano;SharedAccessKey=Fkf/8zRkUquoi2Zby21wLx0BGywPVjlIIaECZA2II8s="
+AZURE_IOTHUB = "<IOTHUB_CONNECTION_STRING>"
 AZURE_MSG = '{{"conf_index": {conf_index}, "confidence": {confidence}, "conf_min": 0, "conf_max": 1}}'
 
 # Function to convert RGBA to RGB, published on Stackoverflow by Feng Wang
