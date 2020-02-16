@@ -72,6 +72,28 @@ We overlay then the level of the confidence of our Machine Learning model in rec
 font.OverlayText(img, width, height, "{:05.2f}% {:s}".format(confidence * 100, class_desc), 5, 5, font.White, font.Gray40)
 ```
 Original frame image then rendered along with the prediction details on attached screen.
+
+Next step is to make our prediction details available in the cloud. First of all, we'll import Azire IoT HUB client libraries.
+```
+from azure.iot.device import IoTHubDeviceClient, Message
+```
+You should assign then the connection string from your Azure IoT Hub to AZURE_IOTHUB variable.
+```
+AZURE_IOTHUB = "<IOTHUB_CONNECTION_STRING>"
+```
+It will be used by our Python program to establish connectivity with the IoT Hub's endpoint.
+```
+iot_client = IoTHubDeviceClient.create_from_connection_string(AZURE_IOTHUB)
+iot_client.connect()
+```
+Once activated, we can send required telemetry details over to the cloud.
+```
+iot_client.send_message(msg)
+```
+And if you will stop the streaming, then the last step in our program is to disconnect our client from Azure IoT Hub.
+```
+iot_client.disconnect()
+```
 > **Note**: Complete code of the program can be found in provided *NANO_camera_v1.py* file.
 
 ## Analytics configuration:
