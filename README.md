@@ -1,5 +1,5 @@
 # Smart Object Recogniser - powered by NVIDIA Jetson Nano
-NVIDIA Jetson Nano Developer Kit is a compact, yet powerful computer equipped with a GPU (Graphics Processing Unit), which allows running of the Machine Learning models at the edge.
+NVIDIA Jetson Nano Developer Kit is a compact, yet powerful computer equipped with a GPU (Graphics Processing Unit), capable of running Machine Learning models at the edge.
 
 Here I'll show how you can easily train your Machine Learning model in the cloud using Google's Teachable Machine Web site, then bring it over to NVIDIA Jetson Nano and run offline.
 <p align="center">
