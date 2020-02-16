@@ -80,7 +80,7 @@ To enable real-time data reporting, I installed Azure IoT Hub in my Azure subscr
 IoT Hub is then used as a data source for another resource in Azure, Azure Stream Analytics, which can process the data stream and in my case redirect it to the PowerBI workspace. ASA uses SQL-like query language, and as shown on the screenshot below I simply redirect all the content to the target table in PowerBI cloud environment.
 ![Azure_ASA](/images/Azure_ASA.png)
 Last part is to create your dashboard in PowerBI. You may configure it directly at https://powerbi.microsoft.com/en-us/ or use richer functionality with the PowerBI desktop client. This is an example of my PowerBI dashboard, which combines historical data from the database with the live stream from the Jetson Nano device.
-![Screenshot 3.5](/images/Analytics_5.png)
+![PowerBI_Dashboard](/images/PowerBI_Dash.png)
 
 ## High-level design:
 The following diagram shows the main components utilised in this project.
