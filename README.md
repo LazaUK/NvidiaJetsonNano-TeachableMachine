@@ -65,7 +65,7 @@ saved_model = tf.keras.models.load_model('savedmodel')
 ```
 After some manipulations with the image array's shape, we feed it into our Machine Learning model to get our prediction.
 ```
-prediction = nano_model(tf.constant(nano_image, dtype=float))['sequential_7'].numpy()
+prediction = nano_model(tf.constant(nano_image, dtype=float))['sequential_3'].numpy()
 ```
 We overlay then the level of the confidence of our Machine Learning model in recognising the objects along with the custom description on top of the streamed video.
 ```
