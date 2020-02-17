@@ -111,7 +111,7 @@ The following diagram shows the main components utilised in this project.
 ![JetsonNano_Architecture](/images/JetsonNano_Architecture.png)
 
 ## Working model - YouTube video:
-You can find short demo of the working solution here on [YouTube](__)
+You can find short demo of the working solution here on [YouTube](https://youtu.be/VoCtKSaFOoI)
 
 ## Credits:
 This solution is based on the original sample code from NVIDIA team, published [here](https://github.com/dusty-nv/jetson-inference). I also used Feng Wang's function for RGBA-to-RGB conversion, and customised Microsoft's demo script to setup connectivity with Azure IoT Hub.
