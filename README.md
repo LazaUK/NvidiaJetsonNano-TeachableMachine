@@ -96,7 +96,7 @@ And if you will stop the streaming, then the last step in our program is to disc
 ```
 iot_client.disconnect()
 ```
-> **Note**: Complete code of the program can be found in provided *NANO_camera_v1.py* file.
+> **Note**: To start the solution, download GitHub repo's content to your Jetson Nano device and enter **"*python3 NANO_camera_v1.py*"** command.
 
 ## Analytics configuration:
 To enable real-time data reporting, I installed Azure IoT Hub in my Azure subscription, so that Jetson Nano could strean telemetry details via IoT Hub's endpoint.
